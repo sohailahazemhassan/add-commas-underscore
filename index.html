@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function AaddCommasAndUnderscore(num){
+            let result = num.toLocaleString()
+            result = result.split("");
+            result[result.length - 4] = "_"
+            result = result.join("");
+            return result;
+        }
+        console.log(AaddCommasAndUnderscore(120));
+        console.log(AaddCommasAndUnderscore(1520));
+        console.log(AaddCommasAndUnderscore(1205679840));
+    </script>
+</body>
+</html>
